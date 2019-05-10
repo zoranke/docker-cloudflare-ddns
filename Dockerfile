@@ -1,5 +1,5 @@
 ARG ARCH
-FROM alpine:3.7r2-${ARCH:-amd64}
+FROM alpine-${ARCH:-amd64}
 
 RUN apk add --no-cache jq curl bind-tools
 
